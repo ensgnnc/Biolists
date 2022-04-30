@@ -4,8 +4,9 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:flutter/material.dart';
 
 class customButtonWidget extends StatefulWidget {
-  String itemName;
+  String ecoName;
 
+  //* Size variable for popup
   double containerHeight;
   double containerWidth;
 
@@ -13,7 +14,7 @@ class customButtonWidget extends StatefulWidget {
       {Key? key,
       required this.containerHeight,
       required this.containerWidth,
-      required this.itemName})
+      required this.ecoName})
       : super(key: key);
 
   @override
@@ -23,8 +24,10 @@ class customButtonWidget extends StatefulWidget {
 class _customButtonWidgetState extends State<customButtonWidget> {
   @override
   Widget build(BuildContext context) {
-    String ecoName = widget.itemName;
+    //* Ecosystem name for print to screen.
+    String ecoName = widget.ecoName;
 
+    //* Get rid of Turkish characters for assets name
     String imageName = ecoName.toLowerCase();
     String _imageName = imageName.replaceAll("ç", "c");
     String __imageName = _imageName.replaceAll("ö", "o");
@@ -129,6 +132,10 @@ class _customButtonWidgetState extends State<customButtonWidget> {
   }
 }
 
+//These codes are trash code i will fix that ASAP.
+//TODO: Fix that
+//TODO: Add popup infos
+//* Widget that returns about info for given ecosystem
 class returnAbout extends StatelessWidget {
   const returnAbout({Key? key, required this.name}) : super(key: key);
   final String name;
@@ -159,6 +166,7 @@ class returnAbout extends StatelessWidget {
   }
 }
 
+//* Widget that returns creature info for given ecosystem
 class returnCreatures extends StatelessWidget {
   const returnCreatures({Key? key, required this.name}) : super(key: key);
   final String name;
@@ -189,6 +197,7 @@ class returnCreatures extends StatelessWidget {
   }
 }
 
+//* Widget that returns climate info for given ecosystem
 class returnClimate extends StatelessWidget {
   const returnClimate({Key? key, required this.name}) : super(key: key);
   final String name;

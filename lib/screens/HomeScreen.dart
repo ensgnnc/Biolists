@@ -1,12 +1,8 @@
-// ignore_for_file: file_names, must_be_immutable, avoid_print, unnecessary_new
+// ignore_for_file: file_names, must_be_immutable, avoid_print, unnecessary_new, todo
 import 'package:google_fonts/google_fonts.dart';
 
 import 'package:flutter/material.dart';
 import 'package:ecolists/widget/itemButtonWidget.dart';
-
-//* flutter build apk --build-name=1.6 --build-number=1
-
-//TODO: Popup information
 
 class HomeScreen extends StatelessWidget {
   HomeScreen({Key? key, required this.width}) : super(key: key);
@@ -14,13 +10,15 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    //* Variable to store the middle
     double mid = width.roundToDouble() / 2;
 
+    //* Store popup width and height
     double containerWidth = mid - 30;
     double containerHeight = containerWidth + 20;
 
     return Scaffold(
-      backgroundColor: const Color(0xFF111111),
+      backgroundColor: const Color.fromARGB(255, 40, 29, 29),
       body: SingleChildScrollView(
         child: Stack(
           children: [
@@ -33,7 +31,7 @@ class HomeScreen extends StatelessWidget {
                     child: Column(
                       children: [
                         Text(
-                          "ecolist",
+                          "biolists",
                           style: GoogleFonts.syne(
                             textStyle: Theme.of(context).textTheme.headline4,
                             fontSize: 36,
@@ -49,7 +47,7 @@ class HomeScreen extends StatelessWidget {
                   alignment: Alignment.center,
                   child: Row(
                     children: [
-//* Sol Tarafs
+//* Sol Taraf
                       Container(
                         margin:
                             const EdgeInsets.only(left: 15, right: 15, top: 40),
@@ -59,25 +57,25 @@ class HomeScreen extends StatelessWidget {
                             customButtonWidget(
                               containerHeight: containerHeight,
                               containerWidth: containerWidth,
-                              itemName: "Orman",
+                              ecoName: "Orman",
                             ),
                             //* Çayır Ekosistemi
                             customButtonWidget(
                               containerHeight: containerHeight,
                               containerWidth: containerWidth,
-                              itemName: "Çayır",
+                              ecoName: "Çayır",
                             ),
                             //* Okyanus Ekosistemi
                             customButtonWidget(
                               containerHeight: containerHeight,
                               containerWidth: containerWidth,
-                              itemName: "Okyanus",
+                              ecoName: "Okyanus",
                             ),
                             //* Göl Ekosistemi
                             customButtonWidget(
                               containerHeight: containerHeight,
                               containerWidth: containerWidth,
-                              itemName: "Göl",
+                              ecoName: "Göl",
                             ),
                           ],
                         ),
@@ -96,25 +94,25 @@ class HomeScreen extends StatelessWidget {
                                   customButtonWidget(
                                     containerHeight: containerHeight,
                                     containerWidth: containerWidth,
-                                    itemName: "Çöl",
+                                    ecoName: "Çöl",
                                   ),
                                   //* Mağara Ekosistemi
                                   customButtonWidget(
                                     containerHeight: containerHeight,
                                     containerWidth: containerWidth,
-                                    itemName: "Mağara",
+                                    ecoName: "Mağara",
                                   ),
                                   //* Deniz Ekosistemi
                                   customButtonWidget(
                                     containerHeight: containerHeight,
                                     containerWidth: containerWidth,
-                                    itemName: "Deniz",
+                                    ecoName: "Deniz",
                                   ),
                                   //* Nehir Ekosistemi
                                   customButtonWidget(
                                     containerHeight: containerHeight,
                                     containerWidth: containerWidth,
-                                    itemName: "Nehir",
+                                    ecoName: "Nehir",
                                   ),
                                 ],
                               ),
