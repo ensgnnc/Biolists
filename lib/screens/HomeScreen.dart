@@ -1,4 +1,4 @@
-// ignore_for_file: file_names, must_be_immutable, avoid_print, unnecessary_new, todo
+// ignore_for_file: file_names, must_be_immutable, avoid_print, unnecessary_new
 import 'package:google_fonts/google_fonts.dart';
 
 import 'package:flutter/material.dart';
@@ -47,31 +47,31 @@ class HomeScreen extends StatelessWidget {
                   alignment: Alignment.center,
                   child: Row(
                     children: [
-//* Sol Taraf
+//* Left Column
                       Container(
                         margin:
                             const EdgeInsets.only(left: 15, right: 15, top: 40),
                         child: Column(
                           children: [
-                            //* Orman Ekosistemi
+                            // Orman Ekosistemi
                             customButtonWidget(
                               containerHeight: containerHeight,
                               containerWidth: containerWidth,
                               ecoName: "Orman",
                             ),
-                            //* Çayır Ekosistemi
+                            // Çayır Ekosistemi
                             customButtonWidget(
                               containerHeight: containerHeight,
                               containerWidth: containerWidth,
                               ecoName: "Çayır",
                             ),
-                            //* Okyanus Ekosistemi
+                            // Okyanus Ekosistemi
                             customButtonWidget(
                               containerHeight: containerHeight,
                               containerWidth: containerWidth,
                               ecoName: "Okyanus",
                             ),
-                            //* Göl Ekosistemi
+                            // Göl Ekosistemi
                             customButtonWidget(
                               containerHeight: containerHeight,
                               containerWidth: containerWidth,
@@ -80,12 +80,12 @@ class HomeScreen extends StatelessWidget {
                           ],
                         ),
                       ),
-//*Sağ Taraf
+//*Right Column
                       Container(
                         margin: const EdgeInsets.only(top: 00),
                         child: Column(
                           children: [
-                            //* Çöl Ekosistemi
+                            // Çöl Ekosistemi
                             Container(
                               margin: const EdgeInsets.only(
                                   left: 15, right: 15, top: 40),
@@ -96,19 +96,19 @@ class HomeScreen extends StatelessWidget {
                                     containerWidth: containerWidth,
                                     ecoName: "Çöl",
                                   ),
-                                  //* Mağara Ekosistemi
+                                  // Mağara Ekosistemi
                                   customButtonWidget(
                                     containerHeight: containerHeight,
                                     containerWidth: containerWidth,
                                     ecoName: "Mağara",
                                   ),
-                                  //* Deniz Ekosistemi
+                                  // Deniz Ekosistemi
                                   customButtonWidget(
                                     containerHeight: containerHeight,
                                     containerWidth: containerWidth,
                                     ecoName: "Deniz",
                                   ),
-                                  //* Nehir Ekosistemi
+                                  // Nehir Ekosistemi
                                   customButtonWidget(
                                     containerHeight: containerHeight,
                                     containerWidth: containerWidth,

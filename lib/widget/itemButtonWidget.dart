@@ -6,7 +6,7 @@ import 'package:flutter/material.dart';
 class customButtonWidget extends StatefulWidget {
   String ecoName;
 
-  //* Size variable for popup
+  //* Container height and width variable
   double containerHeight;
   double containerWidth;
 
@@ -24,7 +24,7 @@ class customButtonWidget extends StatefulWidget {
 class _customButtonWidgetState extends State<customButtonWidget> {
   @override
   Widget build(BuildContext context) {
-    //* Ecosystem name for print to screen.
+    //* Ecosystem name for print on popup widget
     String ecoName = widget.ecoName;
 
     //* Get rid of Turkish characters for assets name
@@ -134,7 +134,7 @@ class _customButtonWidgetState extends State<customButtonWidget> {
 
 //These codes are trash code i will fix that ASAP.
 //TODO: Fix that
-//TODO: Add popup infos
+//TODO: Add popup informations
 //* Widget that returns about info for given ecosystem
 class returnAbout extends StatelessWidget {
   const returnAbout({Key? key, required this.name}) : super(key: key);
