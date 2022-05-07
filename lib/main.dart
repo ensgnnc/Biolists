@@ -28,7 +28,7 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
-    //* Getting screen size for button and popup sizes
+    //? Getting screen size for button and popup sizes
     int getWidht = MediaQuery.of(context).size.width.toInt();
     return Scaffold(
       body: HomeScreen(

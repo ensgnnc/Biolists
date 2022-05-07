@@ -10,10 +10,10 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    //* Variable to store the middle
+    //? Variable to store the middle
     double mid = width.roundToDouble() / 2;
 
-    //* Store popup width and height
+    //? Store popup width and height
     double containerWidth = mid - 30;
     double containerHeight = containerWidth + 20;
 
@@ -47,7 +47,7 @@ class HomeScreen extends StatelessWidget {
                   alignment: Alignment.center,
                   child: Row(
                     children: [
-//* Left Column
+//? Left Column
                       Container(
                         margin:
                             const EdgeInsets.only(left: 15, right: 15, top: 40),
@@ -80,7 +80,7 @@ class HomeScreen extends StatelessWidget {
                           ],
                         ),
                       ),
-//*Right Column
+//? Right Column
                       Container(
                         margin: const EdgeInsets.only(top: 00),
                         child: Column(
